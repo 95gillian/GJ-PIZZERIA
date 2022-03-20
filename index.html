@@ -226,75 +226,109 @@
 </div>
 
 <!---------------------------------------------------------------make an order------------->
-<div class="row" id="makeanorder">
-  <h4>Make an Order</h4>
-  <div class="col-md-6">
-    <select class="form-select" aria-label="Default select example">
-      <option selected>Select the Pizza you want</option>
-      <option value="1">chicken peperoni</option>
-      <option value="2">Mushroom</option>
-      <option value="3">Hawaian</option>
-    </select>
-    <select class="form-select" aria-label="Default select example">
-      <option selected>What pizza size would you opt for?</option>
-      <option value="1">large:1,200/=</option>
-      <option value="2">medium:8,00/=</option>
-      <option value="3">small:4,50/=</option>
-    </select>
-    <select class="form-select" aria-label="Default select example">
-      <option selected>How do you love your pizza</option>
-      <option value="1">crispy</option>
-      <option value="2">glutten-free</option>
-      <option value="3">stuffed</option>
-    </select>
-    <button type="submit"> PROCEED</button>
-
-  </div>
-
-  <div class="col-md-6">
-    <!-- Begin Mailchimp Signup Form -->
-<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css" rel="stylesheet" type="text/css">
-<style type="text/css">
-	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
-	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-</style>
-<div id="mc_embed_signup">
-<form action="https://gmail.us14.list-manage.com/subscribe/post?u=32fdc0abe2daa906f3f3ad607&amp;id=d81a175b12" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <div id="mc_embed_signup_scroll">
-	<h2>Make an Order</h2>
-<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-<div class="mc-field-group">
-	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
-</label>
-	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-</div>
-<div class="mc-field-group">
-	<label for="mce-FNAME">First Name </label>
-	<input type="text" value="" name="FNAME" class="" id="mce-FNAME">
-</div>
-<div class="mc-field-group size1of2">
-	<label for="mce-PHONE">Phone Number </label>
-	<input type="text" name="PHONE" class="" value="" id="mce-PHONE">
-</div>
-	<div id="mce-responses" class="clear foot">
-		<div class="response" id="mce-error-response" style="display:none"></div>
-		<div class="response" id="mce-success-response" style="display:none"></div>
-	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_32fdc0abe2daa906f3f3ad607_d81a175b12" tabindex="-1" value=""></div>
-        <div class="optionalParent">
-            <div class="clear foot">
-                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-                <p class="brandingLogo"><a href="http://eepurl.com/hW5XhT" title="Mailchimp - email marketing made easy and fun"><img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"></a></p>
+<div class="container-fluid order" id="make-order">
+  <div class="order-overlay">
+    <div class="controls-top text-center" id="Order-now"> 
+      <h2>Order Here</h2>
+    </div>
+    <h2>Delivery is one click away</h2>
+    <div class="row">
+        <div class="col-sm-5">
+          <form action="">
+              <label for="select">Select Your Flavor</label>
+              <select class="browser-default custom-select custom-select-md mb-3 name">
+                <!-- <option selected value="choose">Choose your flavor</option> -->
+                <option value="Chicken Tikka">Chicken Tikka</option>
+                <option value="PeriPeri Pizza">PeriPeri Pizza</option>
+                <option value="Raspberry Dessert Pizza">Raspberry Dessert Pizza</option>
+                <option value="Chicken Alfredo Pizza">Chicken Alfredo Pizza</option>
+                <option value="Sunchoke Pizza">Sunchoke Pizza</option>
+                <option value="Buffalo Chicken Sticks">Buffalo Chicken Sticks</option>
+              </select>
+            <label for="select">Select Size</label>
+            <select class="browser-default custom-select custom-select-md mb-3" id="size">
+              <option selected value="0">Select size here</option>
+              <option value="large">Large -- sh. 1200</option>
+              <option value="medium">Medium -- sh. 850</option>
+              <option value="small">Small -- sh. 600</option>
+            </select>
+            <label for="crust">Choose your favorite Crust!</label>
+              <select class="browser-default custom-select custom-select-md mb-3" id="crust">
+                  <option selected value="0">Select your preferred crust!</option>
+                <option value="Crispy">Crispy -- sh. 200</option>
+                <option value="Stuffed">Stuffed -- sh. 150</option>
+                <option value="Gluten-free">Gluten-free-- sh. 180</option>
+              </select>
+            <label for="Toppings">Select Your Toppings at sh. 50 each</label><br>
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input type="checkbox" class="custom-control-input" id="Sausage" value="Sausage" name="toppings">
+                <label class="custom-control-label" for="Sausage">Sausage</label>
+              </div>
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input type="checkbox" class="custom-control-input" id="Bacon" value="Bacon" name="toppings">
+                <label class="custom-control-label" for="Bacon">Bacon</label>
+              </div>
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input type="checkbox" class="custom-control-input" id="Mushrooms" value="Mushrooms" name="toppings">
+                <label class="custom-control-label" for="Mushrooms">Mushrooms</label>
+              </div>
+              <br><br>
+            <button type="submit" class="btn btn-orange proceed">Proceed</button>
+            
+          </form>
+        </div>
+        <div class="col-sm-7">
+          <div id="information">
+            <p>Your order will be processed and delivered within one hour of placing.</p>
+            <p>Make sure you have the total amout for the order during order delivery delivery.</p>
+            <p>Incase of any comment of complaint, Please reach out to us as fast as possible.</p>
+            <p id="regards">Regards, Management</p>
+          </div>
+          <div class="choise">
+            <h2>Your Order is:</h2>
+            <div id="your-orders">
+              <table class="table table-sm  pizzatable">
+                <thead>
+                  <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Size</th>
+                    <th scope="col">Crust</th>
+                    <th scope="col">Topping</th>
+                    <th scope="col">Total</th>
+                  </tr>
+                </thead>
+                <tbody id="ordersmade">
+                  <tr>
+                    <td id="pizzaname"></td>
+                    <td id="pizzasize"></td>
+                    <td id="pizzacrust"></td>
+                    <td id="pizzatopping"></td>
+                    <td id="totals"></td>
+                  </tr>                  
+                </tbody>
+              </table>
+              <p id="pizzatotal"></p>
+              <p id="totalbill"></p> 
+              <p id="addedprice">Delivery will cost sh. 150</p>
+              <p id="finallmessage"></p>
             </div>
+            <button class="btn btn-orange addPizza">Add Pizza</button>
+            <button class="btn btn-orange" id="checkout">Checkout</button>
+            <button class="btn btn-orange deliver">Home delivery?</button>
+          </div>
+          <div class="delivery">
+              <form action="">
+                <div class="form-group">
+                  <input type="text" id="name" class="form-control mb-3" placeholder="Name">
+                  <input type="number" id="phone" class="form-control mb-3" placeholder="Pnone Number">
+                  <input type="text" id="location" class="form-control mb-3" placeholder="Location for delivery">
+                  <button class="btn btn-orange" id="final-order">Place Order</button>
+                </div>
+              </form>
+          </div>
         </div>
     </div>
-</form>
-</div>
-<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-<!--End mc_embed_signup-->
   </div>
-
 </div>
 
 <!---------------------------------------------------------------contact us------------------------->
