@@ -9,6 +9,10 @@ body{
 span{
     color: blue;
 }
+#carousel{
+    opacity: 70%;
+
+}
 #aboutus{
     display: flex;
     align-items: center;
