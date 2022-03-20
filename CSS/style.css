@@ -64,6 +64,11 @@ span{
     color: red;
     transition: 0.5;
 }
+#contactus h4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
 
