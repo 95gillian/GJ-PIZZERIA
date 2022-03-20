@@ -3,7 +3,7 @@ body{
     padding: 0;
     background-image:none;
     background-color: palegoldenrod;
-    font-family: ;
+    font-family: sans-serif;
 
 }
 #aboutus{
@@ -43,6 +43,19 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+#whatweoffer .card-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50% -50%;
+    color: white;
+    border: 2px  solid transparent;
+}
+#whatweoffer .card-title:hover{
+    cursor: pointer;
+    color: red;
+    transition: 0.5;
 }
 
 
