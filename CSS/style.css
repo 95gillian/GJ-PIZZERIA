@@ -38,7 +38,13 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-}whatweoffer h4{
-    display: ;
 }
-#
+#whatweoffer h4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
