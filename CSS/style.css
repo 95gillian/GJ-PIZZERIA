@@ -1,7 +1,9 @@
 body{
     margin: 0;
     padding: 0;
-    background-image: url(/images/background1.jpg);
+    background-image:none;
+    background-color: palegoldenrod;
+    font-family: ;
 
 }
 #aboutus{
@@ -24,5 +26,5 @@ body{
     opacity: 1;
 }
 #aboutus{
-    color: antiquewhite;
+    color: black;
 }
