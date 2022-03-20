@@ -34,3 +34,8 @@ body{
 #aboutus{
     color: black;
 }
+#make-order h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
